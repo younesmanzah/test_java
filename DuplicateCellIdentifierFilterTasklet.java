@@ -22,7 +22,7 @@ public class DuplicateCellIdentifierFilterTasklet implements Tasklet {
     private final PlatformTransactionManager transactionManager;
     private final JdbcTemplate jdbcTemplate;
     private int ignored3GCount = 0;
-    private int ignored4GCount = 0;
+    //private int ignored4GCount = 0;
     //private int ignored5GCount = 0;
 
     public DuplicateCellIdentifierFilterTasklet(PlatformTransactionManager transactionManager, JdbcTemplate jdbcTemplate) {
@@ -106,4 +106,5 @@ public class DuplicateCellIdentifierFilterTasklet implements Tasklet {
     public int getIgnored4GCount() { return ignored4GCount; }
     public int getIgnored5GCount() { return ignored5GCount; }
 }
+
 
